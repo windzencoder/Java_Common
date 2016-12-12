@@ -1,7 +1,6 @@
 package com.wz.security.des;
 
 import java.security.Key;
-import java.security.NoSuchAlgorithmException;
 import java.security.Security;
 
 import javax.crypto.Cipher;
@@ -27,8 +26,7 @@ public class ImoocDES {
 public static void bcDES() {
 		try {
 			Security.addProvider(new BouncyCastleProvider());
-		
-			
+
 			KeyGenerator keyGenerator = KeyGenerator.getInstance("DES", "BC");
 			keyGenerator.getProvider();
 			//指定keysize
