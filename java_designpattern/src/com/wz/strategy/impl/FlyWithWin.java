@@ -9,6 +9,4 @@ public class FlyWithWin implements FlyStragety{
 		System.out.println("振翅高飞");
 	}
 
-	
-	
 }

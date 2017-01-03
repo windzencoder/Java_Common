@@ -10,10 +10,6 @@ public class RedheadDuck extends Duck{
 	public void display() {
 		System.out.println("我的头是红色的");
 	}
-	
-	@Override
-	public void quack() {
-		
-	}
+
 
 }
