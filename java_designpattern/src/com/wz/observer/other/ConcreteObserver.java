@@ -13,7 +13,7 @@ public class ConcreteObserver implements Observer {
 	@Override
 	public void update(WeatherSubject subject) {
 		weatherContent = ((ConcreteWeatherSubject)subject).getWeatherContent();
-		System.out.println(observerName+" 收到了 "+weatherContent);
+		System.out.println(observerName+" 收到了 "+weatherContent+","+remindOfThing);
 	}
 
 	@Override
