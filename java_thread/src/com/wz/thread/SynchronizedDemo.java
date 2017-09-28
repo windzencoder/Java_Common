@@ -51,10 +51,15 @@ class MyRunnable implements Runnable {
 class Foo { 
     private int x = 100; 
     public int getX() { 
-        return x; 
+    	synchronized (this) {
+            return x;
+        }
     } 
     public int fix(int y) { 
-        x = x - y; 
+    		//修改
+    		synchronized (this) {
+    			 x = x - y; 
+		}
         return x; 
     } 
 } 
