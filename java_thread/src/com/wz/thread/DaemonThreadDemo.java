@@ -49,7 +49,7 @@ public class DaemonThreadDemo {
 		
 		DeamonThread deamonThread = new DeamonThread();
 		Thread thread = new Thread(deamonThread, "守护线程");
-		thread.setDaemon(true);
+		thread.setDaemon(true);//守护线程
 		thread.start();
 		
 		//输入后，主线程结束掉
